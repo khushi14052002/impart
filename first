@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+struct distance
+{
+int feet;
+int inches;
+};
+int main()
+{
+distance le1,le2;
+void prnsum(distance&le2,distance&le2);
+cout<<"enter lenghth 1"<<"\n";
+cout<<"feet:";
+cin>>le1.feet;
+cout<<"\n"<<"inches:";
+cin>>le1.inches;
+cout<<"enter lenghth 2"<<"\n";
+cout<<"feet:";
+cin>>le2.feet;
+cout<<"\n"<<"inches:";
+cin>>le2.inches;
+prnsum(l1,l2);
+return 0;
+}
+void prnsum(distance&l1,distance&l2)
+{
+distance l3;
+l3.feet=l1.feet+l2.feet+(l1.inches=l2.inches)/12;
+l3.inches=(l1.inches+l2.inches)%12;
+cout<<"\ntotal feet:"<<l3.feet<<"\n";
+cout<<"\ntotal inches"<<l3.inches;
+return;
+}
+
